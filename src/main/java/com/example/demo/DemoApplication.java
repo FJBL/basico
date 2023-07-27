@@ -14,6 +14,12 @@ public class DemoApplication {
     String home() {
         return "Hello World!";
     }
+    
+
+    @RequestMapping("/hello")
+    String homes() {
+        return "Hello adentro!";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
